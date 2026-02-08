@@ -1,5 +1,5 @@
 import { Shield, Truck, Users, Clock } from 'lucide-react';
-import truckVideo from "../assets/video/truck-video.mp4";
+//import truckVideo from "../assets/movie/truck-video.mp4";
 
 interface HomeProps {
   onNavigate: (page: string) => void;
@@ -32,18 +32,20 @@ export default function Home({ onNavigate }: HomeProps) {
   return (
     <div className="pt-20">
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source
-            src={truckVideo}
-            type="video/mp4"
-          />
-        </video>
+      <video
+  autoPlay
+  loop
+  muted
+  playsInline
+  preload="metadata"
+  className="absolute inset-0 w-full h-full object-cover"
+>
+  <source
+    src="https://github.com/Priyanshu1511/perfect-union-new/releases/download/v1Video/truck-video3.mp4"
+    type="video/mp4"
+  />
+</video>
+
 
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/60 to-slate-900/70"></div>
 
